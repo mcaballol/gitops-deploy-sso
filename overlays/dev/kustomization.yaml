@@ -2,5 +2,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - namespace.yaml
-- rhsso-operator_resourcegroups.yaml
-- rhsso-operator.yaml
+- operator/rhsso-operator_resourcegroups.yaml
+- operator/rhsso-operator.yaml
+
+- instance/secret-externaldb.yaml
+- instance/secret-sso-credential.yaml
+- instance/sso-instance.yaml
