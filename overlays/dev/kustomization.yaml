@@ -19,7 +19,7 @@ patches:
       path: /spec/targetNamespaces/-
       value: rhsso-dev
   target:
-    group: apps
+    group: operators.coreos.com
     kind: OperatorGroup
     name: rhsso
-    version: operators.coreos.com/v1
+    version: v1
