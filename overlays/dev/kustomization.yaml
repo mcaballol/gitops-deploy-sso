@@ -5,8 +5,8 @@ bases:
 resources:
 - namespace.yaml
 
-- instance/secret-externaldb.yaml
-- instance/secret-sso-credential.yaml
+# - instance/secret-externaldb.yaml
+# - instance/secret-sso-credential.yaml
 - instance/sso-instance.yaml
 
 - definitions/test-client-testclient.yaml
@@ -15,9 +15,12 @@ resources:
 generatorOptions:
  disableNameSuffixHash: true
 secretGenerator:
-- name: mysecrets
+- name: keycloak-db-secret
   envs:
   - bd-credential.env
+- name: credential-keycloak
+  envs:
+  - sso-credential.env
 
 patches:
 - patch: |-
