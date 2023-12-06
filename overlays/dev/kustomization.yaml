@@ -12,7 +12,8 @@ resources:
 - definitions/test-client-testclient.yaml
 - definitions/test-realm.yaml
 
-
+generatorOptions:
+ disableNameSuffixHash: true
 secretGenerator:
 - name: mysecrets
   envs:
