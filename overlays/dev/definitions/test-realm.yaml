@@ -3,11 +3,11 @@ kind: KeycloakRealm
 metadata:
   name: test
   labels:
-    app: sso
+    app: sso-test
 spec:
   instanceSelector:
     matchLabels:
-      app: sso-test
+      app: sso
   realm:
     displayName: Basic Realm test
     enabled: true
