@@ -3,7 +3,7 @@ kind: Kustomization
 bases:
 - ../../base
 resources:
-- namespace.yaml
+#- namespace.yaml
 
 - instance/secret-externaldb.yaml
 - instance/secret-sso-credential.yaml
@@ -23,3 +23,4 @@ patches:
     kind: OperatorGroup
     name: rhsso
     version: v1
+
