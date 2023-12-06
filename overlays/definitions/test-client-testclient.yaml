@@ -1,0 +1,19 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakClient
+metadata:
+  name: testclient
+  labels:
+    app: sso
+spec:
+  client:
+    clientId: testclient
+    directAccessGrantsEnabled: false
+    id: 1bd4d808-92dc-46ab-8673-515ad53950e9
+    implicitFlowEnabled: false
+    publicClient: false
+    secret: client-secret_value_finalfinal
+    standardFlowEnabled: false
+  realmSelector:
+    matchLabels:
+      app: sso-test
+  scopeMappings: {}

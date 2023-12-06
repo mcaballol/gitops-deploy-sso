@@ -8,3 +8,6 @@ resources:
 - instance/secret-externaldb.yaml
 - instance/secret-sso-credential.yaml
 - instance/sso-instance.yaml
+
+- definitions/test-client-testclient.yaml
+- definitions/test-realm.yaml

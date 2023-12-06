@@ -1,0 +1,15 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakRealm
+metadata:
+  name: test
+  labels:
+    app: sso
+spec:
+  instanceSelector:
+    matchLabels:
+      app: sso-test
+  realm:
+    displayName: Basic Realm test
+    enabled: true
+    id: test
+    realm: test
