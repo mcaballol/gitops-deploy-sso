@@ -2,25 +2,16 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
 - ../../base
-resources:
-- namespace.yaml
-
-# - instance/secret-externaldb.yaml
-# - instance/secret-sso-credential.yaml
-- instance/sso-instance.yaml
-
-- definitions/test-client-testclient.yaml
-- definitions/test-realm.yaml
 
 generatorOptions:
  disableNameSuffixHash: true
 secretGenerator:
 - name: keycloak-db-secret
   envs:
-  - bd-credential.env
+  - env/bd-credential.env
 - name: credential-keycloak
   envs:
-  - sso-credential.env
+  - env/sso-credential.env
 
 patches:
 - patch: |-
@@ -33,3 +24,13 @@ patches:
     name: rhsso
     version: v1
 
+
+resources:
+- namespace.yaml
+
+# - instance/secret-externaldb.yaml
+# - instance/secret-sso-credential.yaml
+- instance/sso-instance.yaml
+
+- definitions/test-client-testclient.yaml
+- definitions/test-realm.yaml
