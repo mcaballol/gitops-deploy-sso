@@ -15,8 +15,8 @@ resources:
 
 patches:
 - patch: |-
-    - op: replace
-      path: /spec/targetNamespaces/0
+    - op: add
+      path: /spec/targetNamespaces/-
       value: rhsso-dev
   target:
     group: apps
