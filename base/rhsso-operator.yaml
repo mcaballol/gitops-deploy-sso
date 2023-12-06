@@ -6,7 +6,6 @@ metadata:
     argocd.argoproj.io/sync-wave: "2"
 # sync wave 2 since we need the Namespace and OperatorGroup and so on...
   name: rhsso-operator
-  namespace: rhsso-dev
 spec:
   channel: stable
   installPlanApproval: Automatic
