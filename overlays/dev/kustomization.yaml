@@ -3,7 +3,7 @@ kind: Kustomization
 bases:
 - ../../base
 resources:
-#- namespace.yaml
+- namespace.yaml
 
 - instance/secret-externaldb.yaml
 - instance/secret-sso-credential.yaml
@@ -12,6 +12,11 @@ resources:
 - definitions/test-client-testclient.yaml
 - definitions/test-realm.yaml
 
+
+secretGenerator:
+- name: mysecrets
+  envs:
+  - bd-credential.env
 
 patches:
 - patch: |-
