@@ -29,6 +29,6 @@ resources:
 - namespace.yaml
 # - instance/secret-externaldb.yaml
 # - instance/secret-sso-credential.yaml
-- sso-instance.yaml
-- test-client-testclient.yaml
-- test-realm.yaml
+#- definitions/sso-instance.yaml
+#- definitions/test-client-testclient.yaml
+#- definitions/test-realm.yaml
