@@ -33,7 +33,7 @@ spec:
     repoURL: 'https://github.com/mcaballol/gitops-deploy-sso.git'
 # the repository url
     targetRevision: main
-# and branch, in this case HEAD / main
+# and branch, in this case HEAD / main 
   project: rhsso-dev
   syncPolicy:
     automated:
