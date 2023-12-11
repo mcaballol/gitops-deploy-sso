@@ -4,7 +4,7 @@ bases:
 - ../../base
 
 generatorOptions:
- disableNameSuffixHash: false
+ disableNameSuffixHash: true
 secretGenerator:
 - name: keycloak-db-secret
   envs:
