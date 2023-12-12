@@ -11,7 +11,7 @@ spec:
     id: 1bd4d808-92dc-46ab-8673-515ad53950e9
     implicitFlowEnabled: false
     publicClient: false
-    secret: client-secret_value_finalfinal
+    secret: client-hash-estatico
     standardFlowEnabled: false
   realmSelector:
     matchLabels:
