@@ -26,7 +26,7 @@ patches:
 
 
 resources:
-- namespace.yaml
+#- namespace.yaml
 - sso-instance.yaml
 - sso-realms/test-client-testclient.yaml
 - sso-realms/test-realm.yaml
