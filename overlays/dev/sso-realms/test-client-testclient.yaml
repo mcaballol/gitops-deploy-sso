@@ -4,6 +4,8 @@ metadata:
   name: testclient
   labels:
     app: sso
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   client:
     clientId: testclient
