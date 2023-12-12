@@ -27,8 +27,6 @@ patches:
 
 resources:
 - namespace.yaml
-# - instance/secret-externaldb.yaml
-# - instance/secret-sso-credential.yaml
-- definitions/sso-instance.yaml
-#- definitions/test-client-testclient.yaml
-#- definitions/test-realm.yaml
+- sso-instance.yaml
+- sso-realms/test-client-testclient.yaml
+- sso-realms/test-realm.yaml
