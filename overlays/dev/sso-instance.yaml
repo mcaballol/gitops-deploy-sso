@@ -1,8 +1,8 @@
 apiVersion: keycloak.org/v1alpha1
 kind: Keycloak
 metadata:
-  annotations:
-    argocd.argoproj.io/sync-wave: "3"
+  # annotations:
+  #   argocd.argoproj.io/sync-wave: "3"
   labels:
     app: sso
   name: keycloak

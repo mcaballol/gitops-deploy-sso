@@ -44,8 +44,8 @@ spec:
     managedNamespaceMetadata:
       labels:
         argocd.argoproj.io/managed-by: openshift-gitops
-      annotations:
-        argocd.argoproj.io/sync-wave: "0"
+      # annotations:
+      #   argocd.argoproj.io/sync-wave: "0"
 
     syncOptions:
     - CreateNamespace=true
