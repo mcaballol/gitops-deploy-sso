@@ -7,6 +7,9 @@ metadata:
     app: sso
   name: keycloak
 spec:
+  extensions:
+    - >-
+      https://raw.githubusercontent.com/mcaballol/ssothemetest/main/example-theme-0.0.1-SNAPSHOT.jar
   externalAccess:
     enabled: true
   externalDatabase:
