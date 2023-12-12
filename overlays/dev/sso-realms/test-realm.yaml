@@ -4,8 +4,8 @@ metadata:
   name: test
   labels:
     app: sso-test
-  # annotations:
-  #   argocd.argoproj.io/sync-wave: "3"
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   instanceSelector:
     matchLabels:
