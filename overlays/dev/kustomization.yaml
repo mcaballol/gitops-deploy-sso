@@ -25,7 +25,7 @@ patches:
     version: v1
 
 
-resources:
+#resources: 
 #- namespace.yaml
 # - sso-instance.yaml
 # - sso-realms/test-client-testclient.yaml
