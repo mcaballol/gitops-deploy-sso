@@ -12,7 +12,7 @@ spec:
     matchLabels:
       app: sso-test
   user:
-    id: cb4cbe93-18f8-4c17-a7ed-1cd7c5339dda
+    id: 555315a8-6187-4c74-9e1c-052d6dd0cb46
     username: service-account-testclient
     email: user@example.com
     enabled: true
