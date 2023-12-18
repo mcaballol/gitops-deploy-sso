@@ -1,0 +1,27 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakUser
+metadata:
+  name: service-account-testclient
+  labels:
+    app: sso
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  realmSelector:
+    matchLabels:
+      app: sso-test
+  user:
+    id: cb4cbe93-18f8-4c17-a7ed-1cd7c5339dda
+    username: service-account-testclient
+    email: user@example.com
+    enabled: true
+    emailVerified: false
+    totp: false
+    serviceAccountClientId: testclient
+    realmRoles: 
+      - "default-roles-test"
+    clientRoles: 
+      realm-management: 
+        - "manage-clients"
+    notBefore: 0
