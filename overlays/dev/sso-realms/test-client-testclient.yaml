@@ -25,7 +25,9 @@ spec:
       # "client.secret.creation.time": "1702321603",
       "backchannel.logout.session.required": "true"
       # "backchannel.logout.revoke.offline.tokens": "false"
-  
+  serviceAccountClientRoles:
+    realm-management: 
+      - "manage-clients"
   realmSelector:
     matchLabels:
       app: sso-test
