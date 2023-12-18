@@ -19,12 +19,12 @@ spec:
     standardFlowEnabled: false
     serviceAccountsEnabled: true
     frontchannelLogout: false
-  attributes: 
-    # "oidc.ciba.grant.enabled": "false",
-    # "oauth2.device.authorization.grant.enabled": "false",
-    # "client.secret.creation.time": "1702321603",
-    "backchannel.logout.session.required": true
-    # "backchannel.logout.revoke.offline.tokens": "false"
+    attributes: 
+      # "oidc.ciba.grant.enabled": "false",
+      # "oauth2.device.authorization.grant.enabled": "false",
+      # "client.secret.creation.time": "1702321603",
+      "backchannel.logout.session.required": true
+      # "backchannel.logout.revoke.offline.tokens": "false"
   
   realmSelector:
     matchLabels:
