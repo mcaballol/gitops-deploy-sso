@@ -25,7 +25,7 @@ spec:
       # "client.secret.creation.time": "1702321603",
       "backchannel.logout.session.required": "true"
       # "backchannel.logout.revoke.offline.tokens": "false"
-    defaultClientScopes": 
+    defaultClientScopes: 
       -  "web-origins"
       -  "acr"
       -  "profile"
