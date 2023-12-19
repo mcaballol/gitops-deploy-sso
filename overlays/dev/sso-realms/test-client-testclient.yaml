@@ -25,6 +25,19 @@ spec:
       # "client.secret.creation.time": "1702321603",
       "backchannel.logout.session.required": "true"
       # "backchannel.logout.revoke.offline.tokens": "false"
+    defaultClientScopes": 
+      -  "web-origins"
+      -  "acr"
+      -  "profile"
+      -  "roles"
+      -  "email"
+      
+    optionalClientScopes:
+      - "address"
+      - "phone"
+      - "offline_access"
+      - "microprofile-jwt"
+      
   serviceAccountClientRoles:
     realm-management: 
       - "manage-clients"
