@@ -61,4 +61,6 @@ spec:
       - "phone"
       - "offline_access"
       - "microprofile-jwt"
-      
+    attributes:
+      "backchannel.logout.session.required": "true"
+  
