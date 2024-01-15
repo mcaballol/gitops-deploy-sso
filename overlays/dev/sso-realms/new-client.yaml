@@ -17,5 +17,46 @@ spec:
     secret: client-portal
     clientAuthenticatorType: client-secret
     consentRequired: false
+    standardFlowEnabled: true
+
     protocolMappers:
-      - protocolMappers:
+      - id: 875efa30-e72d-4f6a-b57f-55e10611bda5
+        name: "email verified"
+        protocol: "openid-connect"
+        protocolMapper: "oidc-usermodel-property-mapper"
+        consentRequired: false
+        config: 
+          "userinfo.token.claim": "true"
+          "user.attribute": "emailVerified"
+          "id.token.claim": "true"
+          "access.token.claim": "true"
+          "claim.name": "email_verified"
+          "jsonType.label": "boolean"
+        
+
+      - id: "97fcc273-6f83-424a-8eac-333d9b8a8231"
+        name: "org_name"
+        protocol: "openid-connect"
+        protocolMapper: "oidc-usermodel-attribute-mapper"
+        consentRequired: false,
+        config: 
+          "userinfo.token.claim": "false"
+          "multivalued": "false"
+          "user.attribute": "org_name"
+          "id.token.claim": "true"
+          "access.token.claim": "true"
+          "claim.name": "org_name"
+          "jsonType.label": "String"
+    defaultClientScopes: 
+      - "web-origins"
+      - "acr"
+      - "profile"
+      - "roles"
+      - "email"
+      
+    optionalClientScopes: 
+      - "address"
+      - "phone"
+      - "offline_access"
+      - "microprofile-jwt"
+      
