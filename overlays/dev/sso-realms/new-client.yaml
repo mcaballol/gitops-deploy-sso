@@ -15,4 +15,7 @@ spec:
   client:
     clientId: client-portal
     secret: client-portal
-    clientAuthenticatorType: client-portal
+    clientAuthenticatorType: client-secret
+    consentRequired: false
+    protocolMappers:
+      - protocolMappers:
