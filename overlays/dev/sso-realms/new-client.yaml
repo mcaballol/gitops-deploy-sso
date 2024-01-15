@@ -38,7 +38,7 @@ spec:
         name: "org_name"
         protocol: "openid-connect"
         protocolMapper: "oidc-usermodel-attribute-mapper"
-        consentRequired: false,
+        consentRequired: false
         config: 
           "userinfo.token.claim": "false"
           "multivalued": "false"
