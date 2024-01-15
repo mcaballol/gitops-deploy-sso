@@ -1,0 +1,18 @@
+kind: KeycloakClient
+apiVersion: keycloak.org/v1alpha1
+metadata:
+  name: client-portal
+  labels:
+    app: sso
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+  namespace: rhsso-dev
+spec:
+  realmSelector:
+    matchLabels:
+      app: sso-test
+  client:
+    clientId: client-portal
+    secret: client-portal
+    clientAuthenticatorType: client-portal

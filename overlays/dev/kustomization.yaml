@@ -30,4 +30,6 @@ resources:
 - sso-instance.yaml
 - sso-realms/test-client-testclient.yaml
 - sso-realms/test-realm.yaml
+- sso-realms/new-client.yaml
+
 
