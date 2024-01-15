@@ -20,7 +20,7 @@ spec:
     standardFlowEnabled: true
 
     protocolMappers:
-      - id: 875efa30-e72d-4f6a-b57f-55e10611bda5
+      - id: client-portal-protocolMappers-email-verified
         name: "email verified"
         protocol: "openid-connect"
         protocolMapper: "oidc-usermodel-property-mapper"
@@ -34,7 +34,7 @@ spec:
           "jsonType.label": "boolean"
         
 
-      - id: "97fcc273-6f83-424a-8eac-333d9b8a8231"
+      - id: client-portal-protocolMappers-org_name
         name: "org_name"
         protocol: "openid-connect"
         protocolMapper: "oidc-usermodel-attribute-mapper"
