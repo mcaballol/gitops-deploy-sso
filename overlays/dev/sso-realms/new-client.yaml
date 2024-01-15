@@ -18,7 +18,10 @@ spec:
     clientAuthenticatorType: client-secret
     consentRequired: false
     standardFlowEnabled: true
+    redirectUris:
+      - "https://yourdomain.3scale.net/*"
 
+    rootUrl: "https://yourdomain.3scale.net"
     protocolMappers:
       - id: 8ba6ceb8-1d4b-413b-8341-9de7d901e0ed
         name: "email verified"
